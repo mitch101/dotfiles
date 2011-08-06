@@ -1,14 +1,17 @@
 # Define bash colours
-source bash_colours.bash
+source ./bash_colours.bash
 
 # Setup Git completion
-source git-completion.bash
+source ./git-completion.bash
 
 export CLICOLOR=1
 export EDITOR="mate -w"
 
 # Add personal scripts to path
-export PATH=$PATH:~/bin
+export PATH=~/bin:$PATH
+
+# Add current directory to path
+export PATH=.:$PATH
 
 # Configure prompt
 export GIT_PS1_SHOWDIRTYSTATE=true
