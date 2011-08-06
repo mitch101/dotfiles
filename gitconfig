@@ -1,0 +1,11 @@
+[user]
+	name = Mitch Crowe
+	email = mitch.crowe@suite101.com
+[core]
+	editor = mate -w
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	co = checkout
