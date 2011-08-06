@@ -7,8 +7,6 @@ source git-completion.bash
 export CLICOLOR=1
 export EDITOR="mate -w"
 
-# Add Postgres binaries to path
-export PATH=$PATH:/Library/PostgreSQL/9.0/bin
 # Add personal scripts to path
 export PATH=$PATH:~/bin
 
