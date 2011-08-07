@@ -22,6 +22,9 @@ export PS1="\[$IGreen\]\n\h:\w \[$BIGreen\]\$(__git_ps1 [%s]) \n→ \[$Color_Off
 
 # Aliases
 alias rm='rm -i'
+function rails_template() { rails new "$@" -J -T -m https://raw.github.com/mitch101/Rails-3-Starter-Kit/master/template.rb; }
 
 # Load custom bashrc
 source ~/bin/custom_dotfiles/bashrc
+
+
