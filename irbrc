@@ -25,10 +25,10 @@ if defined?(Rails.env)
   }
   IRB.conf[:PROMPT_MODE] = :RAILS
   # Redirect log to STDOUT, which means the console itself
-  IRB.conf[:IRB_RC] = Proc.new do
-    logger = Logger.new(STDOUT)
-    ActiveRecord::Base.logger = logger
-    ActiveResource::Base.logger = logger
-    ActiveRecord::Base.instance_eval { alias :[] :find }
-  end
+  # IRB.conf[:IRB_RC] = Proc.new do
+  #   logger = Logger.new(STDOUT)
+  #   ActiveRecord::Base.logger = logger
+  #   ActiveResource::Base.logger = logger
+  #   ActiveRecord::Base.instance_eval { alias :[] :find }
+  # end
 end
