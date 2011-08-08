@@ -15,7 +15,7 @@ export EDITOR="mate -w"
 
 # Configure prompt
 export GIT_PS1_SHOWDIRTYSTATE=true
-export PS1="\[$IGreen\]\n\h:\w \[$IGreen\][\$(~/.rvm/bin/rvm-prompt v p g s)] \[$BIGreen\]\$(__git_ps1 [%s]) \n→ \[$Color_Off\] "
+export PS1="\[$IGreen\]\n\h:\w \[$Yellow\](\$(~/.rvm/bin/rvm-prompt v p g s)) \[$Yellow\]\$(__git_ps1 [%s]) \[$BIGreen\]\n→ \[$Color_Off\] "
 
 # Load RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

@@ -9,3 +9,5 @@
 	branch = auto
 [alias]
 	co = checkout
+
+[push] default=tracking
